@@ -731,7 +731,7 @@
 
     // update the selected flag and the active list item
     _selectFlag: function(countryCode) {
-      this.selectedFlagInner.attr("class", "flag " + countryCode+ "flag-"+countryCode);
+      this.selectedFlagInner.attr("class", "flag " + countryCode + " flag-"+countryCode);
 
       // update the title attribute
       this.selectedCountryData = this._getCountryData(countryCode, false, false);
