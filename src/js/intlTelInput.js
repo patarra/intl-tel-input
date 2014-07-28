@@ -231,7 +231,7 @@
         // open the list item
         tmp += "<li class='country " + className + "' data-dial-code='" + c.dialCode + "' data-country-code='" + c.iso2 + "'>";
         // add the flag
-        tmp += "<div class='flag flag-" + c.iso2 + "'></div>";
+        tmp += "<div class='flag " + c.iso2 + "flag-" + c.iso2 + "'></div>";
         // and the country name and dial code
         tmp += "<span class='country-name'>" + c.name + "</span>";
         tmp += "<span class='dial-code'>+" + c.dialCode + "</span>";
@@ -731,7 +731,7 @@
 
     // update the selected flag and the active list item
     _selectFlag: function(countryCode) {
-      this.selectedFlagInner.attr("class", "flag " + countryCode);
+      this.selectedFlagInner.attr("class", "flag " + countryCode+ "flag-"+countryCode);
 
       // update the title attribute
       this.selectedCountryData = this._getCountryData(countryCode, false, false);
