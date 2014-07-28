@@ -1,5 +1,5 @@
-{
-  "name": "intl-tel-input",
+
+  "name": "intl-tel-input-patarra",
   "version": "2.0.8",
   "main": [
     "./build/js/intlTelInput.min.js",
